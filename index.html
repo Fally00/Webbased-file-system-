@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File System</title>
+
+    <!-- Cyberpunk Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cyber-container">
+        <h1 class="cyber-title">FILATO</h1>
+        <p> Disk Simulation</p>
+    </header>
+
+   
+    <div class="cyber-container" id="filesystem-panel">
+
+        <div id="tree-view" class="panel">
+            <h2 class="panel-title">Directories</h2>
+            <ul id="directory-tree" class="tree-list">
+            
+            </ul>
+        </div>
+
+        
+        <div id="file-view" class="panel">
+            <h2 class="panel-title">File Content</h2>
+            <pre id="file-content" class="file-box">
+                Select a file...
+            </pre>
+        </div>
+
+    <div class="cyber-container" id="actions">
+        <button class="button" onclick="createFolder()">Create Folder</button>
+        <button class="button" onclick="createFile()">Create File</button>
+        <button class="button" onclick="renameNode()">Rename</button>
+        <button class="button" onclick="deleteNode()">Delete</button>
+    </div>
+
+
+
+    </div>
+
+    <div class="container">
+  <div class="grid">
+    <div class="cyber-container">
+      <h2 class="cyber-title">System Monitor</h2>
+      <div class="card">
+        <h3>Workspace Statues</h3>
+        <p>_________</p>
+      </div>
+      <button class="button">Refresh</button>
+    </div>
+
+    <div class="cyber-container">
+      <h2 class="cyber-title">System Logs</h2>
+      <div id="log-viewer" class="log-viewer">
+        <div id="logs-container" class="logs-container"></div>
+      </div>
+      <div class="log-controls">
+        <button class="button" onclick="clearLogs()">Clear Logs</button>
+        <label class="label"><input type="checkbox" id="auto-scroll" checked> Auto Scroll</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer class="footer">
+    <p>© 2025 CyberLogistics UI • <a href="#">GitHub</a> • <a href="#">Docs</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
